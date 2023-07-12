@@ -1,15 +1,36 @@
 /**
  * Created by iyasuwatts on 10/17/17.
  */
+
+import java.util.Scanner;
 public class Main {
 
+
     public static void main(String[] args){
-        
-        int number = getInputNumber();
-        
-        int sum = sumOfNumbers(number);
-        
-        System.out.println(sum);
+
+
+//        int number = getInputNumber();
+//
+//
+//
+//        int sum = sumOfNumbers(number);
+//
+//        System.out.println(sum);
+
+        Scanner x= new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        Integer number = x.nextInt();
+        System.out.println("You have entered: " + number);
+
+
+        Integer i;
+        Integer result = 0;
+
+        for  (i = 0; i <= number; ++i) {
+            result = result + i;
+
+        }
+        System.out.println(result);
 
     }
     
